@@ -15,12 +15,10 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import adobexd from "./tech/adobexd.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import cpp from "./tech/cpp.png";
 import mysql from "./tech/mysql.png";
-import mendix from "./tech/mendix.png"
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import python from "./tech/python.png";
@@ -28,6 +26,13 @@ import tailwind from "./tech/tailwind.png";
 import java from "./tech/java.png";
 import matlab from "./tech/matlab.png";
 import django from "./tech/django.png";
+import typescript from "./tech/typescript.png";
+import restapi from "./tech/restapi.png";
+import openai from "./tech/openai.png";
+import javascript from "./tech/javascript.png";
+import fastapi from "./tech/fastapi.svg";
+import amazonwebservices from "./tech/amazonwebservices.svg";
+import gcp from "./tech/googlecloud.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -72,7 +77,8 @@ export {
   close,
   css,
   docker,
-  adobexd,
+  amazonwebservices,
+  gcp,
   git,
   html,
   cpp,
@@ -83,7 +89,12 @@ export {
   tailwind,
   java,
   matlab,
+  typescript,
+  javascript,
+  fastapi,
+  restapi,
   meta,
+  openai,
   shopify,
   starbucks,
   konverge,
@@ -95,7 +106,6 @@ export {
   cfv,
   bank,
   DTMF,
-  mendix,
   mail,
   phone,
   linkedin,
