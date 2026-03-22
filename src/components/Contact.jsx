@@ -67,19 +67,29 @@ const Contact = () => {
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
-      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
+      <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-6 sm:p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText} style={{ marginBottom: '30px' }}>Contact.</h3>
 
         <div className="mb-5">
-          <div className="flex items-center mb-3">
-            <img src={phone} alt="phone" className="w-8 h-5 rounded-lg mr-5" />
-            <p className={styles.sectionSubText}>+1 (530)781-6347 / +91 8668411204</p>
+          <div className="flex items-start gap-3 sm:gap-5 mb-4">
+            <img src={phone} alt="phone" className="w-8 h-5 rounded-lg shrink-0 mt-1" />
+            <a
+              href="tel:+15307816347"
+              className="text-secondary text-[15px] sm:text-[18px] normal-case tracking-normal leading-relaxed break-words"
+            >
+              +1 (530)781-6347 / +91 8668411204
+            </a>
           </div>
 
-          <div className="flex items-center mb-3">
-            <img src={mail} alt="mail" className="w-8 h-5 rounded-lg mr-5" />
-            <p className={styles.sectionSubText}>prajwal.borawake85@gmail.com</p>
+          <div className="flex items-start gap-3 sm:gap-5 mb-3">
+            <img src={mail} alt="mail" className="w-8 h-5 rounded-lg shrink-0 mt-1" />
+            <a
+              href="mailto:prajwal.borawake85@gmail.com"
+              className="text-secondary text-[15px] sm:text-[18px] normal-case tracking-normal leading-relaxed break-all"
+            >
+              prajwal.borawake85@gmail.com
+            </a>
           </div>
         </div>
 

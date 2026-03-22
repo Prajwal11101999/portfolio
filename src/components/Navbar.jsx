@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
 
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const resumeUrl = "https://drive.google.com/drive/folders/1I7aK51eMzv4MdYMOoq9V29ly93FYYL2w";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,8 +29,16 @@ const Navbar = () => {
 
   const handleResumeClick = () => {
     setActive("Resume");
-    // Hardcode the URL you want to navigate to
-    window.location.href = "https://drive.google.com/drive/folders/1I7aK51eMzv4MdYMOoq9V29ly93FYYL2w"; // Replace with your desired URL
+    window.open(resumeUrl, "_blank", "noopener,noreferrer");
+  };
+
+  const handleNavItemClick = (navTitle) => {
+    setActive(navTitle);
+    setToggle(false);
+
+    if (navTitle === "Resume") {
+      handleResumeClick();
+    }
   };
 
 
@@ -49,9 +58,8 @@ const Navbar = () => {
           }}
         >
           {/*<img src={logo} alt='logo' className='w-9 h-9 object-contain' />)*/}
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Prajwal &nbsp;
-            <span className='sm:block hidden'> Borawake</span>
+          <p className='text-white text-[16px] sm:text-[18px] font-bold cursor-pointer whitespace-nowrap'>
+            Prajwal Borawake
           </p>
         </Link>
 
@@ -61,14 +69,15 @@ const Navbar = () => {
               key={nav.id}
               className={`${active === nav.title ? "text-white" : "text-secondary"
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => {
-                setActive(nav.title);
-                if (nav.title === "Resume") {
-                  handleResumeClick();
-                }
-              }}
+              onClick={() => handleNavItemClick(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.title === "Resume" ? (
+                <button type='button' className='text-inherit'>
+                  {nav.title}
+                </button>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -91,12 +100,15 @@ const Navbar = () => {
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
                     }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
+                  onClick={() => handleNavItemClick(nav.title)}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.title === "Resume" ? (
+                    <button type='button' className='text-inherit'>
+                      {nav.title}
+                    </button>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
