@@ -92,10 +92,10 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2024 - Aug 2024",
     points: [
-      "Developed scalable backend services using Python and REST APIs for a creator engagement platform, enabling secure content delivery and improving API response consistency by 22% under high user interaction workloads.",
-      "Built interactive frontend components using React and TypeScript to support creator dashboards, enhancing user experience and reducing page load times by 18% across key engagement and analytics features.",
-      "Integrated MySQL-based data storage solutions with backend services, optimizing query execution and improving data retrieval efficiency by 20% for content feeds and creator activity tracking systems.",
-      "Collaborated with product managers and designers to implement user-facing features, contributing clean and maintainable code while improving feature delivery speed by 15% through effective sprint planning and reviews.",
+      "Developed full-stack healthcare applications using Python, React, and REST APIs on AWS, implementing Postgres data models and improving system reliability by 25% across distributed environments.",
+      "Built responsive front-end components using React and MaterialUI integrated with backend services, supporting feature development workflows and reducing interface latency by 30% across healthcare applications.",
+      "Assisted in unit testing and debugging backend services using Python and Postgres, identifying defects early and reducing production issues by 18% across application components.",
+      "Collaborated with engineers and product teams using Git to document requirements, support release cycles, and improve AWS-basedsystem monitoring and deployment workflows.",
     ],
   },
   {
@@ -105,12 +105,12 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "June 2020 - July 2023",
     points: [
-      "Engineered backend services using Python and REST APIs to support large-scale content processing systems, improving request throughput by 26% while handling high concurrency across distributed platform components.",
-      "Designed and optimized data pipelines integrating Python and MySQL, reducing query latency by 29% and improving performance of content recommendation and analytics workflows for user engagement insights.",
-      "Developed modular APIs for platform services enabling seamless integration with frontend applications, improving system scalability andreducing feature deployment time by 21% across multiple product releases.",
-      "Implemented parallel processing using Python multiprocessing and asynchronous programming, reducing processing time by 28% for high-volume data operations in production environments.",
-      "Automated CI/CD workflows using Docker and Jenkins, improving deployment reliability and reducing manual release effort by 65%, enabling faster iteration cycles for engineering teams.",
-      "Built and maintained comprehensive test suites ensuring system stability and reliability, increasing test coverage to over 90% and reducing post-release defects by 18% across core backend services.",
+      "Engineered scalable backend systems using Python and REST APIs on AWS, processing healthcare datasets and improving throughput by 28% across distributed application environments reliably.",
+      "Developed full-stack features using React and Node.js with Postgres, enabling real-time data visualization and reducing processing latency by 30% for critical healthcare systems.",
+      "Built RESTful APIs for healthcare workflows using Python and Postgres, optimizing query performance and improving response times by 22% across microservices systems.",
+      "Automated CI/CD pipelines using AWS, Docker, and Jenkins, supporting release cycles and reducing deployment effort by 70% across backend application environments.",
+      "Implemented unit and system testing using Selenium and Mockito, identifying defects and achieving over 90% test coverage for critical healthcare application modules.",
+      "Collaborated with cross-functional teams in code reviews and requirement discussions, improving system quality and ensuring reliable AWS-based healthcare application operations.",
     ],
   },
   {
